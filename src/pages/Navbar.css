@@ -1,0 +1,71 @@
+.navbar {
+  background: #000000;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.header {
+  color: #ffffff; 
+  margin: 0;
+}
+
+.header-title {
+  font-size: 2.5em;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.814), rgba(243, 243, 243, 0.506));
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+  background-size: 100%;
+  background-position: center;
+  transition: all 0.3s ease;
+  will-change: background-image, transform;
+}
+
+.header-title:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(200, 200, 200, 0.8));
+  transform: scale(1.05);
+}
+
+
+.nav-buttons {
+  display: flex;
+  gap: 80px; 
+  justify-content: center; 
+  flex-grow: 1; 
+  margin-left: -250px;
+}
+
+.nav-button {
+  background: none;
+  color: #4dabfc;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #0056b3; 
+  text-decoration: underline;
+}
+
+.nav-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(77, 171, 252, 0.6);
+}
+
+.nav-button:active {
+  color: #003366;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit; 
+}

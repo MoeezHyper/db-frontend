@@ -1,0 +1,122 @@
+.books-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 2200px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.books-container::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("background_pic.jpg") no-repeat center center;
+    opacity: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+    z-index: -1; 
+}
+
+.collect-title {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffffd6;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.book-author {
+    display: block;
+    background-color: #d5d5d5;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+}
+
+.book-description {
+    padding: 10px;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.book-availability {
+    display: block;
+    font-size: 1.2em;
+    color: #444;
+    font-weight: bold;
+}
+
+.available {
+    color: green;
+    background-color: #000000c6;
+    padding: 20px;
+  }
+  
+.reserved {
+color: yellow;
+background-color: #000000c6;
+padding: 20px;
+}
+  
+
+.checked-out {
+color: red;
+background-color: #000000c6;
+padding: 20px;
+}
+
+.delete-button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #be0303;
+    font-weight: bold;
+}
+
+  
